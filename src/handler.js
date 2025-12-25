@@ -5,8 +5,8 @@ const notes = require('./notes');
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
 
-  const id = nanoid(16);
-  const createdAt = new Date().toISOString();
+  const id = nanoid(16); //make random id 16 char
+  const createdAt = new Date().toISOString(); //make date now
   const updatedAt = createdAt;
 
   const newNote = {
