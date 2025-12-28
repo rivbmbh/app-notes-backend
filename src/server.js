@@ -9,7 +9,8 @@ const init = async () => {
   // Membuat instance server Hapi
   const server = Hapi.server({
     port: 5000, // Server berjalan di port 5000
-    host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
+    // host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
+    host: 'production',
     routes: {
       cors: {
         // Mengaktifkan CORS agar bisa diakses dari domain lain
