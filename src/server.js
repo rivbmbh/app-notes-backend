@@ -8,7 +8,7 @@ const routes = require('./routes');
 const init = async () => {
   // Membuat instance server Hapi
   const server = Hapi.server({
-    port: 3000, // Server berjalan di port 5000
+    port: 5000, // Server berjalan di port 5000
     host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
     // host: 'production',
     routes: {
